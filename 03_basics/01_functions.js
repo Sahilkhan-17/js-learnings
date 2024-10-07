@@ -1,20 +1,20 @@
-// function defination
+// function  ------- defination --------
 function printHello() {
     console.log("Hello world")
 }
 
-//  printHello = without () called as function reference
+//  printHello = without () called as ---- function reference ------
 
-//  with () function execution 
+//  with ()  ------ function execution -------- 
 printHello()
 
 
-function addNumbers(number1, number2) {  // here it is called Parameters.
+function addNumbers(number1, number2) {  // here it is called ----- Parameters ------
     // console.log(number1 + number2)
     return number1 + number2;
 }
 
-addNumbers(2, 3)  // here it is called Arguments.
+addNumbers(2, 3)  // here it is called ----- Arguments --------
 
 // returning value from a function used return keyword while defining function else it will give undefined.
 const result = addNumbers(2, 3)
@@ -39,3 +39,14 @@ function greet(greeter='Sam'){
 // if we pass any value then, that value will be printed.
 const doGreet = greet()  
 console.log(doGreet)
+
+
+// Variables are so powerful in js it can hold functions as well.
+// Here addTwo is called as -------- Expressions ------ in Js. 
+
+// console.log(addTwo(2))  // we cannot access Expression (addTwo) before initialization, it will throw error
+
+const addTwo = function (num){
+    return num + 2;
+}
+console.log(addTwo(2))   // this is possible
