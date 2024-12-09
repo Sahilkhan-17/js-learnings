@@ -1,7 +1,7 @@
 # js-Learning
 Learnings : Using Git as an Online Environment , using Codespace in Github.
 
-### JavaScript is :
+### (default) JavaScript is :
     Synchronous Language
     Single threaded
 
@@ -54,7 +54,14 @@ greet();
 | ruby | C++ | .net |
 
 
+### Async Javascript 
+        "I will finish later!"
+    Functions running in parallel with other functions are called asynchronous
+    A good example is JavaScript setTimeout()
 
+        "async and await make promises easier to write"
+    async makes a function return a Promise
+    await makes a function wait for a Promise
 
 
 
