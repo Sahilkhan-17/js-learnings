@@ -50,3 +50,20 @@ const addTwo = function (num){
     return num + 2;
 }
 console.log(addTwo(2))   // this is possible
+
+// --------------------- ----------------------------
+// Important: in below examples we are calling function which is declare afterwards. 
+
+// ex.1
+console.log(addSomething(2));   // calling normal function result = 3.
+
+function addSomething(num){    // normal function declaration
+    return num + 1;
+}
+
+// ex.2
+console.log(addAnotherThing(2));  // calling (function) as Expression result = error.
+
+const addAnotherThing = function (num){     // function declaration as Expression (addAnotherThing)
+    return num + 1;
+}
